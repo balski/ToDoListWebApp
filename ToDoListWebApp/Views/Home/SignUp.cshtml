@@ -1,0 +1,24 @@
+﻿@model ToDoListWebApp.Models.Users
+@{
+    ViewData["Title"] = "Sign Up - ToDoList WebApp";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Sign Up</h1>
+</div>
+
+<form action="/home/signup" method="post"> 
+    <div class="mb-3">
+        <label for="lbluserid" class="form-label">User Id</label>
+        <input type="text" class="form-control" placeholder="Please enter username" asp-for="UserId">
+    </div>
+    <div class="mb-3">
+        <label for="lblpassword" class="form-label">Password</label>
+        <input type="password" class="form-control" placeholder="Please enter password" asp-for="Password">
+    </div>
+    <div class="mb-3">
+        <label for="lblname" class="form-label">Name</label>
+        <input type="text" class="form-control" placeholder="Please enter your name" asp-for="Name">
+    </div>
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+</form>

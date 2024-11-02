@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Log In - ToDoList WebApp";
+}
+
+<div class="text-center">
+    <h1 class="display-4">ToDoList Web Application</h1>
+</div>
+
+<form>
+    <div class="mb-3">
+        <label for="lbluserid" class="form-label">User Id</label>
+        <input type="text" class="form-control" id="txtuserid" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <button type="submit" class="btn btn-primary">Log In</button>
+</form>
+
+<div class="text-center">
+    @* <p>Don't have an account? ' <a href="~/Views/Home/UserRegistration.cshtml">Sign Up</a>.</p> *@
+    <p>Don't have an account? @Html.ActionLink("Sign Up", "SignUp")</p>
+</div>
